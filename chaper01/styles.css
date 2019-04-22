@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 h1 {
   color: #2f4f4f;
   margin-bottom: 10px;
@@ -13,10 +16,21 @@ h1 {
 .nav a {
   color: white;
   background-color: #13a4a4;
-  padding: 5px;
+  padding: 5px 15px;
   border-radius: 2px;
   text-decoration: none;
 }
 .nav .featured {
   background-color: orange;
+  box-shadow: 10px 2px #6F9090;
+}
+.footer {
+  background-color: #CCC;
+  color: #666;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+.footer a {
+  color: inherit;
 }
