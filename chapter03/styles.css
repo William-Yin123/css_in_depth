@@ -1,0 +1,55 @@
+:root {
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #EEE;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body * + * {
+  margin-top: 1.5em;
+}
+header {
+  padding: 1em 1.5em;
+  background-color: #0072B0;
+  color: white;
+  border-radius: 0.5em;
+}
+.container {
+  display: flex;
+}
+.main {
+  width: 70%;
+  padding: 1em 1.5em;
+  background-color: white;
+  border-radius: 0.5em;
+}
+.sidebar {
+  width: 30%;
+  margin-top: 0;
+  margin-left: 1.5em;
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 0.5em;
+}
+.button-link {
+  background-color: #0072B0;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-link {
+  margin-top: 1.5em;
+}
+.sponsor-link {
+  display: block;
+  color: #0072B0;
+  font-weight: bold;
+  text-decoration: none;
+}

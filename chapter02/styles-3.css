@@ -1,0 +1,28 @@
+:root {
+  font-size: calc(0.5em + 1vw);
+}
+/* @media (min-width: 800px) {
+  :root {
+    font-size: 0.875em;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    font-size: 1em;
+  }
+} */
+.box {
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #999;
+}
+.box > h2 {
+  margin-top: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.box.large {
+  font-size: 1.2em;
+}
