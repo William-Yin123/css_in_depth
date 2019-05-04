@@ -1,0 +1,42 @@
+:root {
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #EEE;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body * + * {
+  margin-top: 1.5em;
+}
+.section + .section {
+  margin-left: 1.5em;
+}
+.section {
+  float: left;
+  background-color: white;
+  padding: 2em;
+  max-width: calc(25% - 1.5em);
+  margin: 0 auto 1.5em;
+}
+.left {
+  float: left;
+  margin-right: 2em;
+}
+.right {
+  overflow: auto;
+  margin-top: 0;
+}
+.right > h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.row {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.row::after {
+  clear: both;
+}

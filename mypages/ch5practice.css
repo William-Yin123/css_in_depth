@@ -1,0 +1,103 @@
+:root {
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #EEE;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body * + * {
+  margin-top: 1.5em;
+}
+.section + .section {
+  margin-left: 1.5em;
+}
+.section {
+  flex: 1;
+  background-color: white;
+  padding: 2em;
+  margin: 0 auto 1.5em;
+}
+.left {
+  float: left;
+  margin-right: 2em;
+}
+.right {
+  overflow: auto;
+  margin-top: 0;
+}
+.right > h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.row {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.row::after {
+  clear: both;
+}
+.uppercase {
+  text-transform: uppercase;
+  text-align: center;
+}
+.signup {
+  background-color: blue;
+  padding: 0.5em 5em;
+  color: white;
+  display: block;
+}
+.signup:hover {
+  cursor: pointer;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.7;
+}
+.price span {
+  margin-top: 0;
+  padding-top: 0;
+}
+.currency {
+  font-size: 2rem;
+}
+.dollars {
+  font-size: 4rem;
+}
+.cents {
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  background-color: blue;
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.menu li {
+  margin-top: 0;
+  background-color: orange;
+  padding: 0.5em;
+}
+.menu li + li {
+  margin-left: 1.5em;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+.menu li.extremeright {
+  margin-left: auto;
+  margin-right: 1.5em;
+}
