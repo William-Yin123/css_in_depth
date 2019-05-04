@@ -1,0 +1,183 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.8em);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 50em) {
+  :root {
+    font-size: 1em;
+  }
+}
+body {
+  margin: 0;
+}
+.section1 {
+  background-color: #EEE;
+  padding: 1em 0.5em 0.5em;
+  font-weight: normal;
+  margin-top: 0;
+}
+.heading {
+  margin-top: 0;
+  margin-left: 0;
+}
+.directory, .navbar {
+  margin: 0.75em;
+}
+.directory {
+  background-color: #EEE;
+  padding: 0.5em;
+}
+a {
+  color: #337AB7;
+  text-decoration: none;
+  font-weight: normal;
+}
+a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  list-style-type: none;
+  padding: 0;
+}
+.navbar li {
+  text-align: center;
+  padding: 0;
+}
+.navbar li a {
+  padding: 0.5em 1em;
+  text-align: center;
+  display: block;
+}
+@media (min-width: 50em) {
+  .navbar {
+    display: flex;
+  }
+  .navbar li {
+    flex: 1;
+  }
+}
+.navbar li a:hover {
+  background-color: #DDD;
+}
+.navbar .current a {
+  background-color: #337AB7;
+  color: white;
+}
+main {
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+}
+.container {
+  border: 1px solid #CCC;
+  border-radius: 0.5em;
+}
+.content {
+  padding: 0 0.5em;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 50em) {
+  img {
+    width: 30%;
+  }
+  .info {
+    margin-top: 0;
+    margin-left: 1.5em;
+    width: 60%;
+  }
+  .info::after {
+    clear: both;
+  }
+  img, .info {
+    float: left;
+  }
+}
+table tbody tr:nth-child(2n+1) {
+  background-color: #DDD;
+}
+td {
+  border-top: 1px solid #CCC;
+}
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+td {
+  padding: 0.5em;
+}
+th {
+  text-align: left;
+  padding-left: 0.5em;
+}
+h3 {
+  font-weight: normal;
+}
+.activated {
+  background-color: #DFF0D8 !important;
+}
+main * + * {
+  margin-top: 1.5em;
+}
+.schedule {
+  border: 1px solid #CCC;
+}
+.schedule * {
+  border-right: 1px solid #CCC;
+}
+table.schedule tbody tr {
+  background-color: white;
+}
+.topsection {
+  background-color: #EEE;
+}
+.topsection .section1 {
+  margin-bottom: 0;
+}
+.topsection a {
+  margin-top: 0.5em;
+  border: 1px solid #CCC;
+  font-size: 1em;
+  border-radius: 0.5em;
+  background-color: white;
+  padding: 0.5em;
+  display: inline-block;
+  color: black;
+  margin-left: 0.5em;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 50em) {
+  .topsection .section1::after {
+    content: "";
+  }
+}
+@media (min-width: 50em) {
+  main {
+    display: flex;
+  }
+  main .column {
+    flex: 1;
+    margin-top: 0;
+  }
+  main .column + .column {
+    margin-left: 2em;
+  }
+  main, .directory, .navbar {
+    margin: 1em auto;
+    width: 75em;
+  }
+}
+footer {
+  background-color: #EEE;
+  text-align: center;
+  padding: 0.5em;
+}
+footer p {
+  margin: 0;
+}
